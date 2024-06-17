@@ -108,7 +108,6 @@ function CarForm({ onSubmit }) {
         />
         {anoError && <p className="error">{anoError}</p>}
         <input type="submit" onClick={handleSubmit} />
-        <a href="/home">Cancelar</a>
       </form>
     </div>
   );
