@@ -7,6 +7,7 @@ function About() {
       <p className={styles.aboutDescription}>
         Esta é uma aplicação para um CRUD de carros
       </p>
+      <img src="./hotwheels2.png" className={styles.image}></img>
     </div>
   );
 }

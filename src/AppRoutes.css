@@ -1,0 +1,12 @@
+.routes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.route-item {
+  flex: 1;
+  margin: 0 10px;
+}

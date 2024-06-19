@@ -1,0 +1,26 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.navegacao {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:#646161 ;
+    margin-top: 20px;
+  }
+  
+  .navegacao a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .navegacao a:hover {
+    background-color: #555;
+    border-radius: 67%;
+  }

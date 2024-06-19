@@ -1,8 +1,8 @@
-import "./CarForm.module.css";
+import styles from './CarForm.module.css'; 
 import { useState } from "react";
+import { postCarsData } from '../../service';
 
-function CarForm({ onSubmit }) {
-  const [id, setId] = useState(4);
+function CarForm() {
   const [nome, setNome] = useState("");
   const [nomeError, setNomeError] = useState("");
   const [marca, setMarca] = useState("");
@@ -45,23 +45,17 @@ function CarForm({ onSubmit }) {
     }
 
     const car = {
-      id: id,
-      nome: nome,
-      marca: marca,
-      cor: cor,
-      ano: ano,
+      name: nome,
+      brand: marca,
+      color: cor,
+      year: ano,
     };
-    onSubmit(car);
+    postCarsData(car)
     resetaInput();
-    incrementId();
-  };
-
-  const incrementId = () => {
-    setId((prevId) => prevId + 1);
   };
 
   return (
-    <div id="box">
+    <div className={styles.box}>
       <h1>Adicionar Carro</h1>
       <form>
         <label>Nome: </label>

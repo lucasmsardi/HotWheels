@@ -24,3 +24,11 @@ h1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+li {
+    width: 100%;
+}
+
+button {
+    margin: 5px;
+}
