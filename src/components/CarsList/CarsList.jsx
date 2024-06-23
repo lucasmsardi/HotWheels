@@ -1,7 +1,9 @@
-import styles from "./CarsList.module.css";
-import { getCarsData, deleteCarData, putCarsData } from "../../service";
+import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
+import styles from "./CarsList.module.css";
+import { getCarsData, deleteCarData, putCarsData } from "../../service";
+
 
 function CarsList() {
   const [cars, setCars] = useState([]);
@@ -35,14 +37,14 @@ function CarsList() {
                   deleteCarData(car);
                 }}
               >
-                Excluir
+                <i className="bi bi-trash"></i>
               </button>
               
               <button
                 className={styles.botoes}
                 onClick={() => navigate('/editar-carro', { state: { car } })}
               >
-                Editar
+                <i className="bi bi-pencil"></i>
               </button>
             </li>
           ))
