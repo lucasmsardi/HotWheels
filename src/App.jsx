@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div id="box" data-testid='oi'>
+      <div id="box">
         <Navbar />
         <main>
           <AppRoutes />
